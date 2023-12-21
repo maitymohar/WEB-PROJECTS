@@ -15,9 +15,38 @@
  ul.mainmenu li.menu {
     list-style: none;
     display: inline-block;
-    padding: 20px;
+    padding: 10px 10px;
+   
+}
+ul.mainmenu{
+    border-radius: 50px;
 }
 ul.mainmenu li.menu a{
     color: black;
     text-decoration: none;
+    display: block;
+    padding:10px;
+    border-radius: 20px;
+}
+ul.mainmenu li.menu a:hover{
+    background: rgb(110, 103, 103);
+}
+.navbar .navdiv ul li ul.dropdown li{
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.navbar .navdiv ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background: whitesmoke;
+    padding: 10px 5px;
+    border-radius: 20px;
+}
+.navbar .navdiv ul li:hover ul.dropdown{
+    display: block;
+    background: whitesmoke;
 }
