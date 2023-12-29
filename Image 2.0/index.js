@@ -1,7 +1,9 @@
+
 //Theme Button
 function myfucntion(){
     var element = document.body;
     element.classList.toggle("dark-mode")
+    alert("Theme Changed Successfully");
 }
 
 

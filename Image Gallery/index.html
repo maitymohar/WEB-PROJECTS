@@ -3,48 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Image Gallery</title>
+    <title>Change Theme Example</title>
+    <style>
+        body {
+            transition: background-color 0.5s;
+        }
 
+        .change-theme-btn {
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h3 id="gallery">Image Gallery</h3>
-        <nav id="navigation">
-            <button onclick="myfucntion()">Change Theme</button>
-        </nav>
-    </header>
 
-    <div id="clock">8:10:25</div>
-    
-    <div class="gallery">
-        <div>
-            <span>
-                <img src="./images/image-1.png" alt="">
-            </span>
-            <span>
-                <img src="./images/image-2.png" alt="">
-            </span>
-            <span>
-                <img src="./images/image-3.png" alt="">
-            </span>
-            <span>
-                <img src="./images/image-4.png" alt="">
-            </span>
-            <span>
-                <img src="./images/image-5.png" alt="">
-            </span>
-            <span>
-                <img src="./images/image-6.png" alt="">
-            </span>
-        </div>
-    </div>
+    <button class="change-theme-btn" onclick="changeTheme()">Change Theme</button>
 
+    <script>
+        function changeTheme() {
+            // Get the body element
+            var body = document.body;
 
+            // Generate a random color
+            var randomColor = getRandomColor();
 
-    
-    <footer>2023 Image Gallery</footer>
-    <script src="index.js"></script>
+            // Change the background color
+            body.style.backgroundColor = randomColor;
+
+            // Display an alert message
+            alert("Changed theme successfully");
+        }
+
+        function getRandomColor() {
+            // Generate a random hex color code
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+
 </body>
 </html>
