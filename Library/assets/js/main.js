@@ -34,10 +34,32 @@ const loginButton = document.getElementById('login-button')
        }
 
 /*=============== ADD SHADOW HEADER ===============*/
+const shadowHeader = () =>{
+    const header = document.getElementById('header')
 
-
+    this.scrollY>=50 ? header.classList.add('shadow-header')
+                     : header.classList.remove('shadow-header')
+}
+window.addEventListener('scroll', shadowHeader)
 /*=============== HOME SWIPER ===============*/
+let swiperHome = new Swiper('.home_swiper', {
+    loop: true,
+    spaceBetween: -24,
+    grabCursor: true,
+    slidesPerView: 'auto',
+    centeredSlides: 'auto',
 
+    autoplay:{
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    breakpoints: {
+        1220: {
+            spaceBetween: -32
+        }
+    }
+  });
 
 /*=============== FEATURED SWIPER ===============*/
 
