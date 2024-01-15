@@ -478,12 +478,35 @@ img {
 }
 
 .featured_prices{
- 
+ font-size: var(--small-font-size);
+ text-decoration: line-through;
+}
+.featured_card .button{
+  cursor: pointer;
+}
+
+.featured_actions{
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: .75rem;
+  position: absolute;
+  top: 2rem;
+  right: -1.5rem;
+  transition: right, .4s;
+}
+
+.featured_actions button{
+  background: none;
+  font-size: 1.25rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.featured_card:hover .featured_actions{
+  right: 1.5rem;
 }
 
 /* Swiper class */
-
-
 /*=============== DISCOUNT ===============*/
 
 
