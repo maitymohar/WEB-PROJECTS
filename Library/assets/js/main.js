@@ -68,6 +68,7 @@ let swiperFeatured = new Swiper('.featured_swiper', {
     grabCursor: true,
     slidesPerView: 'auto',
     centeredSlides: 'auto',
+    
 
     breakpoints: {
         1150: {
@@ -78,7 +79,21 @@ let swiperFeatured = new Swiper('.featured_swiper', {
   });
 
 /*=============== NEW SWIPER ===============*/
+let swiperNew = new Swiper('.featured_swiper', {
+    loop: true,
+    spaceBetween: 16,
+    grabCursor: true,
+    slidesPerView: 'auto',
+    centeredSlides: 'auto',
+    
 
+    breakpoints: {
+        1150: {
+            slidesPerView: 4, 
+            centeredSlides:false
+        }
+    }
+  });
 
 /*=============== TESTIMONIAL SWIPER ===============*/
 
