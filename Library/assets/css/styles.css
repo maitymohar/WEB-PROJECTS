@@ -585,16 +585,154 @@ img {
 
 
 /*=============== JOIN ===============*/
+.join_container{
+  position: relative;
+  padding-block: 3rem;
+}
 
+.join_bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
+.join_data{
+  position: relative;
+
+}
+
+.join_title{
+  color: var(--white-color);
+}
+
+.join_form{
+  display: grid;
+  row-gap: 1rem;
+}
+
+.join_input{
+  padding: 1.25rem 1rem;
+  background-color: var(--body-color);
+  color: var(--title-color);
+  transition: background-color .4s;
+}
+
+.join_input::placeholder{
+  color: var(--text-color);
+
+}
+
+.join_button{
+  padding-block: 1.25rem;
+  cursor: pointer;
+}
 /*=============== TESTIMONIAL ===============*/
+.testimonial_card{
+  text-align: center;
+  background-color: var(--container-color);
+  padding: 2rem 3rem 2.5rem;
+  border: 2px solid var(--border-color);
+  transition: border .4s, background-color .4s;
+}
 
+.testimonial_img{
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+}
+
+.testimonial_title{
+  font-size: var(--h2-font-size);
+  margin-bottom: .75rem;
+}
+
+.testimonial_description{
+  font-size: var(--small-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.testimonial_stars{
+  color: var(--first-color);
+  
+}
 
 /*=============== FOOTER ===============*/
+.footer{
+  padding-block: 4rem 6rem;
+}
 
+.footer_container{
+  row-gap: 3rem;
+}
+
+.footer_logo{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  color: var(--first-color);
+  font-size: var(--h3-font-size);
+  font-family: var(--second-font);
+  margin-bottom: 1.25rem;
+}
+
+.footer_logo i{
+  font-size: 1.25rem;
+}
+
+.footer_data{
+  grid-template-columns: repeat(2, max-content);
+  gap: 3rem 2rem;
+}
+
+.footer_title{
+  font-size: var(--h3-font-size); 
+  margin-bottom: 1.25rem;
+}
+
+.footer_links{
+  display: grid;
+  row-gap: .5rem;
+}
+
+.footer_links{
+  color: var(--text-color);
+  transition: color .4s;
+}
+
+.footer__links:hover{
+  color: var(--first-color);
+}
+
+.footer_info{
+  font-style: normal;
+}
+
+.footer_social{
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+.foooter_social-link{
+  font-size: 1.25rem;
+  color: var(--first-color);
+  text-align: center;
+  font-size: var(--small-font-size);
+}
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(230, 165%, 65%);
+}
 
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(230, 16%, 55%);
+}
 
 /*=============== SCROLL UP ===============*/
 

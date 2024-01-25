@@ -79,30 +79,60 @@ let swiperFeatured = new Swiper('.featured_swiper', {
   });
 
 /*=============== NEW SWIPER ===============*/
-let swiperNew = new Swiper('.featured_swiper', {
+let swiperNew = new Swiper('.new_swiper', {
     loop: true,
     spaceBetween: 16,
     grabCursor: true,
     slidesPerView: 'auto',
-    centeredSlides: 'auto',
     
 
     breakpoints: {
         1150: {
-            slidesPerView: 4, 
-            centeredSlides:false
+            slidesPerView: 3, 
+ 
         }
     }
   });
 
 /*=============== TESTIMONIAL SWIPER ===============*/
+let swiperTest = new Swiper('.testimonial_swiper', {
+    loop: true,
+    spaceBetween: 16,
+    grabCursor: true,
+    slidesPerView: 'auto',
+    
 
+    breakpoints: {
+        1150: {
+            slidesPerView: 3, 
+ 
+        }
+    }
+  });
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelector()
 
+const scrollActive = () =>{
+    const scrollDown =window.scrollY
+
+    sections.forEach(current =>{
+        const sectionHeight =current.offsetheight,
+         sectionTop = current.offsetTop-58,
+         section = current.getAttribute('id'),
+         sectionsClass = document.querySelector()
+    
+        if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
+            sectionsClass.classList.add()
+        }
+        else{
+            sectionsClass.classList.remove()
+        }
+    })
+}
 
 /*=============== DARK LIGHT THEME ===============*/ 
 
