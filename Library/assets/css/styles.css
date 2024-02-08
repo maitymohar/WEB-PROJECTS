@@ -102,7 +102,14 @@ img {
 
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
+body.dark-theme{
+  --title-color: hsl(230, 48%, 85%);
+  --text-color: hsl(230, 16%, 70%);
+  --border-color: hsl(230, 12%, 18%);
+  --body-color: hsl(230, 12%, 8%);
+  --container-color: hsl(230, 12%, 12%);
 
+}
 
 /*========== 
 	Color changes in some parts of 
@@ -225,7 +232,9 @@ img {
 }
 
 /* Active link */
-
+.active-link{
+  color: var(--first-color);
+}
 
 /*=============== SEARCH ===============*/
 .search{
@@ -742,9 +751,54 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 320px)
+{
+  .container{
+    margin-inline: 1rem;
+  }
 
+  .nav_menu{
+    padding-inline: 3rem;
+  }
+
+  .discount_img-1,
+  .discount_img-2{
+    width: 140px;
+  }
+  .new_card{
+    flex-direction: column;
+  }
+
+  .testimonial_card{
+    padding-inline: 1rem;
+  }
+
+  .footer_data{
+    line-gap-override: 1fr;
+    row-gap: 2rem;
+  }
+}
 
 /* For medium devices */
+@media screen and (min-width:450px) {
+  .featured_card{
+    width: 290px;
+  }
 
+  .new_card{
+    width: 390px;
+  }
+
+  .testimonial_card{
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .search_form{
+    width: 500px;
+    margin-inline: auto;
+  }
+}
 
 /* For large devices */
